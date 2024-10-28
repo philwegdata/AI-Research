@@ -5,15 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Research Highlights</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>AI Research Highlights</h1>
-    <div id="papers">
-        <div class="paper">
-            <h3><a href="https://arxiv.org/abs/your-paper-id">Paper Title</a></h3>
-            <p>Annotation about why this paper is important. Add tags like <span class="tag">Natural Language Processing</span>.</p>
-        </div>
-        <!-- Add more papers here in the same format -->
+    <div class="container">
+        <h1>AI Research Highlights</h1>
+        <p>A curated list of important AI research papers, with annotations on their significance and links to the full text.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Company/Org</th>
+                    <th>Date</th>
+                    <th>Abstract</th>
+                    <th>Link to Paper</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents</td>
+                    <td>DeepMind</td>
+                    <td>08.01.2024</td>
+                    <td>Foundation models that incorporate language, vision, and actions for robotics in unseen scenarios, leveraging vision-language models for scene understanding and language models for task instructions.</td>
+                    <td><a href="https://auto-rt.github.io/static/pdf/AutoRT.pdf" target="_blank">Read Paper</a></td>
+                </tr>
+                <tr>
+                    <td>Blending Is All You Need: Cheaper, Better Alternative to Trillion-Parameters LLM</td>
+                    <td>University of Cambridge, University College London</td>
+                    <td>04.01.2024</td>
+                    <td>Blending smaller language models to achieve comparable performance to larger models, demonstrating cost efficiency without sacrificing quality.</td>
+                    <td><a href="https://arxiv.org/pdf/2401.02994.pdf" target="_blank">Read Paper</a></td>
+                </tr>
+                <tr>
+                    <td>Direct Preference Optimization: Your Language Model is Secretly a Reward Model</td>
+                    <td>Stanford University, CZ Biohub</td>
+                    <td>13.12.2023</td>
+                    <td>Introducing a new parameterization that stabilizes RLHF, making language model fine-tuning computationally lightweight and more efficient.</td>
+                    <td><a href="https://arxiv.org/pdf/2305.18290.pdf" target="_blank">Read Paper</a></td>
+                </tr>
+                <tr>
+                    <td>Mixtral of Experts</td>
+                    <td>Mistral</td>
+                    <td>08.01.2024</td>
+                    <td>Introducing Mixtral, a Sparse Mixture of Experts (SMoE) language model that vastly outperforms Llama 2 70B and GPT-3.5 on various benchmarks.</td>
+                    <td><a href="https://arxiv.org/pdf/2401.04088.pdf" target="_blank">Read Paper</a></td>
+                </tr>
+                <tr>
+                    <td>WikiChat: Stopping the Hallucination of Large Language Model Chatbots by Few-Shot Grounding on Wikipedia</td>
+                    <td>Stanford University</td>
+                    <td>27.10.2023</td>
+                    <td>First few-shot chatbot grounded in Wikipedia, significantly reducing hallucinations and achieving high factual accuracy in simulated conversations.</td>
+                    <td><a href="https://arxiv.org/pdf/2305.14292v2.pdf" target="_blank">Read Paper</a></td>
+                </tr>
+                <tr>
+                    <td>Retrieval-Augmented Generation for Large Language Models: A Survey</td>
+                    <td>Shanghai Research Institute for Intelligent Autonomous Systems</td>
+                    <td>05.01.2024</td>
+                    <td>Surveying the RAG approach to improve accuracy and traceability in LLMs by integrating external knowledge repositories.</td>
+                    <td><a href="https://arxiv.org/pdf/2312.10997v4.pdf" target="_blank">Read Paper</a></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
