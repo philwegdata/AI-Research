@@ -42,12 +42,20 @@
         a:hover {
             text-decoration: underline;
         }
+        #filterInput {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 1em;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>AI Research Highlights</h1>
         <p>A curated list of important AI research papers, with annotations on their significance and links to the full text.</p>
+        <input type="text" id="filterInput" placeholder="Filter by title, author, topic, or affiliation...">
         <table>
             <thead>
                 <tr>
@@ -59,7 +67,7 @@
                     <th>Link to Paper</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="paperTable">
                 <tr>
                     <td>AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents</td>
                     <td>DeepMind</td>
@@ -167,5 +175,20 @@
             </tbody>
         </table>
     </div>
+    <script>
+        document.getElementById('filterInput').addEventListener('keyup', function() {
+            let filterValue = this.value.toLowerCase();
+            let rows = document.querySelectorAll('#paperTable tr');
+            
+            rows.forEach(row => {
+                let textContent = row.textContent.toLowerCase();
+                if (textContent.includes(filterValue)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
