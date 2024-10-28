@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+#papers {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.paper {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.tag {
+    background: #e0e0e0;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
